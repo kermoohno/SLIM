@@ -12,4 +12,20 @@ class AlbumsController extends Controller
 		$albums = json_decode(file_get_contents(__DIR__.'/../../data/albums.json'));
 		return $this->render($response, 'default.html', ['albums' => $albums]);
 	}
+
+	public function search(Request $request, Response $response)
+{
+    $albums = json_decode(file_get_contents(__DIR__.'/../../data/albums.json'));
+
+    $queryParams = $request->getQueryParams();
+    $query = $queryParams['q'] ?? '';
+
+    if($query){
+        $albums = array_values(array_filter($albums, function($album) use ($query){
+            return strpos($album->title, $query) !== false || strpos($album->artist, $query) !== false;
+        }));
+    }
+
+    return $this->render($response, 'search.html', ['albums' => $albums]);
+}
 }
