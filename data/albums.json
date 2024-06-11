@@ -1,66 +1,114 @@
 [
     {
+        "id": 1,
         "title": "Insomniac",
-        "artist": "Green Day"
+        "artist": "Green Day",
+        "type": "Rock",
+        "year": 1987
     },
     {
+        "id": 2,
         "title": "American Idiot",
-        "artist": "Green Day"
+        "artist": "Green Day",
+        "type": "Pop Rock",
+        "year": 2018
     },
     {
+        "id": 3,
         "title": "Conspiracy of One",
-        "artist": "Offspring"
+        "artist": "Offspring",
+        "type": "Music",
+        "year": 2000
     },
     {
+        "id": 4,
         "title": "Dead Silience",
-        "artist": "Billy Talent"
+        "artist": "Billy Talent",
+        "type": "Music",
+        "year": 2020
     },
     {
+        "id": 5,
         "title": "ANThology",
-        "artist": "Alien Ant Farm"
+        "artist": "Alien Ant Farm",
+        "type": "EMO Rock",
+        "year": 2024
     },
     {
+        "id": 6,
         "title": "Enema of the State",
-        "artist": "Blink-182"
+        "artist": "Blink-182",
+        "type": "Rock",
+        "year": 1987
     },
     {
+        "id": 7,
         "title": "Pennybridge Pioneers",
-        "artist": "Milencolin"
+        "artist": "Milencolin",
+        "type": "Music",
+        "year": 1999
     },
-    {
+    {   
+        "id": 8,
         "title": "Chuck",
-        "artist": "Sum 41"
+        "artist": "Sum 41",
+        "type": "Pop",
+        "year": 2000
     },
     {
+        "id": 9,
         "title": "The State",
-        "artist": "Nickelback"
+        "artist": "Nickelback",
+        "type": "Rock",
+        "year": 1998
     },
     {
+        "id": 10,
         "title": "Silver Side Up",
-        "artist": "Nickelback"
+        "artist": "Nickelback",
+        "type": "Rock",
+        "year": 1997
     },
     {
+        "id": 11,
         "title": "Fallen",
-        "artist": "Evenescence"
+        "artist": "Evenescence",
+        "type": "Rock/Metal",
+        "year": 2002
     },
     {
+        "id": 12,
         "title": "Scripted",
-        "artist": "Icon For Hire"
+        "artist": "Icon For Hire",
+        "type": "Music",
+        "year": 2005
     },
     {
+        "id": 13,
         "title": "Icon For Hire",
-        "artist": "Icon For Hire"
+        "artist": "Icon For Hire",
+        "type": "Pop Rock",
+        "year": 2010
     },
     {
+        "id": 14,
         "title": "You Can't Kill Us",
-        "artist": "Icon For Hire"
+        "artist": "Icon For Hire",
+        "type": "Pop Rock",
+        "year": 2011
     },
     {
+        "id": 15,
         "title": "Sleeping With Ghosts",
-        "artist": "Placebo"
+        "artist": "Placebo",
+        "type": "Music",
+        "year": 2020
     },
     {
+        "id": 16,
         "title": "Steal This Album",
-        "artist": "System of a Down"
+        "artist": "System of a Down",
+        "type": "Rock",
+        "year": 2012
     }
 ]
