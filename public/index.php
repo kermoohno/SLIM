@@ -27,4 +27,14 @@ $app->get('/search', 'App\Controller\AlbumsController:search');
 $app->any('/form', 'App\Controller\AlbumsController:form');
 $app->get('/api', 'App\Controller\ApiController:search');
 
+$errorMiddleware = $app->addErrorMiddleWare(true, true, true);
+
+$errorMiddleware->setErrorHandler(
+    Slim\Exception\HttpNotFoundException::class,
+    function(Psr\Http\Message\ServerRequestInterface $request) use ($container){
+        $controller = new App\Controller\ExceptionController($container);
+        return $controller->notFound($request);
+    }
+);
+
 $app->run();
