@@ -59,12 +59,13 @@ public function form(Request $request, Response $response)
     $key = array_search($args['id'], array_column($albums, 'id'));
 
     if($key === false){
-    	thrown new HttpNotFoundException($request, $response);
+        throw new HttpNotFoundException($request, $response);
     }
 
     return $this->render($response, 'details.html', [
         'album' => $albums[$key]
     ]);
 }
+
 
 }
